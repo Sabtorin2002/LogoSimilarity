@@ -1,0 +1,30 @@
+image_size = (256, 256)  # Resize images
+batch_size = 64  # Number of images processed per batch
+
+dbscan = DBSCAN(eps=1, min_samples=5, metric='euclidean', metric_params={}, algorithm='auto', leaf_size=30, p=None, n_jobs=-1)
+Silhouette Score: -0.13044200837612152
+
+
+dbscan = DBSCAN(eps=5, min_samples=5, metric='euclidean', metric_params={}, algorithm='auto', leaf_size=30, n_jobs=-1)
+Silhouette Score: -0.11970280110836029
+
+
+
+dbscan = DBSCAN(eps=5, min_samples=10, metric='euclidean', metric_params={}, algorithm='auto', leaf_size=30, n_jobs=-1)
+Silhouette Score: -0.1487935334444046
+
+
+dbscan = DBSCAN(eps=5, min_samples=10, metric='euclidean', metric_params={}, algorithm='brute', leaf_size=30, n_jobs=-1, p=1)
+Silhouette Score: -0.1487935334444046
+
+
+dbscan = DBSCAN(eps=5, min_samples=20, metric='euclidean', metric_params={}, algorithm='brute', leaf_size=30, n_jobs=-1, p=1)
+Silhouette Score: -0.17994298040866852
+
+
+dbscan = DBSCAN(eps=2, min_samples=20, metric='euclidean', metric_params={}, algorithm='brute', leaf_size=30, n_jobs=-1, p=1)
+Silhouette Score: -0.17994298040866852
+
+
+dbscan = DBSCAN(eps=2, min_samples=20, metric='euclidean', metric_params={}, algorithm='brute', leaf_size=30, n_jobs=-1, p=2)
+Silhouette Score: -0.17994298040866852

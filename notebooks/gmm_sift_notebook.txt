@@ -1,0 +1,110 @@
+# Image preprocessing parameters
+image_size = (256, 256)  # Increase image resolution
+batch_size = 50  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.001, covariance_type='full', reg_covar=0.001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.27325916290283203
+
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=1000, tol=0.001, covariance_type='full', reg_covar=0.001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.27325916290283203
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.001, covariance_type='spherical', reg_covar=0.001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.20406588912010193
+
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.01, covariance_type='full', reg_covar=0.001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.27325916290283203
+
+
+
+
+# Image preprocessing parameters
+image_size = (512, 512)  # Increase image resolution
+batch_size = 32  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.01, covariance_type='full', reg_covar=0.001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.27557501196861267
+
+
+gmm = GaussianMixture(n_components=k, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.276260107755661
+
+
+
+
+# Image preprocessing parameters
+image_size = (1024, 1024)  # Increase image resolution
+batch_size = 16  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=k, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.281714528799057
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.3, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.281714528799057
+
+
+# Image preprocessing parameters
+image_size = (1024, 1024)  # Increase image resolution
+batch_size = 64  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.281714528799057
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='tied', reg_covar=0.01)
+Optimal Number of Clusters: 2
+Silhouette Score: 0.13402582705020905
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='diag', reg_covar=0.01)
+Optimal Number of Clusters: 2
+Silhouette Score: 0.2717730700969696
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='spherical', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.19407391548156738
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='kmeans', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.28359678387641907
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='kmeans', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.0001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.28359678387641907
+
+
+# Image preprocessing parameters
+image_size = (2048, 2048)  # Increase image resolution
+batch_size = 16  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.3, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 2
+Silhouette Score: 0.2554309368133545
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='k-means++', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.01)
+Optimal Number of Clusters: 2
+Silhouette Score: 0.2554309368133545
+
+
+# SIFT feature extractor
+sift = cv2.SIFT_create(
+    nfeatures=500,    # Increase number of keypoints
+    contrastThreshold=0.02,  # Lower threshold for detecting weaker features
+    edgeThreshold=15,  # Higher value to ignore edge-like features
+    sigma=1.2  # Adjust Gaussian filter
+)
+
+image_size = (1024, 1024)  # Increase image resolution
+batch_size = 64  # Number of images processed per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, random_state=42, init_params='kmeans', max_iter=500, tol=0.1, covariance_type='full', reg_covar=0.0001)
+Optimal Number of Clusters: 3
+Silhouette Score: 0.28214725852012634

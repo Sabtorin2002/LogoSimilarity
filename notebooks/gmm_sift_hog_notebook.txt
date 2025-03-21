@@ -1,0 +1,45 @@
+# Image processing parameters
+image_size = (256, 256)  # Optimized size for memory efficiency
+batch_size = 16  # Process 16 images per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="kmeans")
+Optimal Number of Clusters: 4
+Silhouette Score: 0.27106109152342545
+
+
+# Image processing parameters
+image_size = (256, 256)  # Optimized size for memory efficiency
+batch_size = 64  # Process 16 images per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="kmeans")
+Optimal Number of Clusters: 4
+Silhouette Score: 0.2715231795259933
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="tied", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="kmeans")
+Optimal Number of Clusters: 4
+Silhouette Score: 0.2708516593396351
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="tied", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="k-means++")
+Optimal Number of Clusters: 2
+Silhouette Score: 0.14581001985966377
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="k-means++")
+Optimal Number of Clusters: 4
+Silhouette Score: 0.24684935384529524
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=200, tol=0.1, reg_covar=0.001, init_params="k-means++")
+Optimal Number of Clusters: 4
+Silhouette Score: 0.24687300949665178
+
+
+# Image processing parameters
+image_size = (512, 512)  # Optimized size for memory efficiency
+batch_size = 64  # Process 16 images per batch
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=500, tol=0.1, reg_covar=0.001, init_params="kmeans")
+Optimal Number of Clusters: 3
+Silhouette Score: 0.2604972098456871
+
+gmm = GaussianMixture(n_components=optimal_clusters, covariance_type="full", random_state=42, max_iter=200, tol=0.1, reg_covar=0.001, init_params="k-means++")
+Optimal Number of Clusters: 3
+Silhouette Score: 0.24401363832757297
